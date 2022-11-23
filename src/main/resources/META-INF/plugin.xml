@@ -1,0 +1,27 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+    <id>ru.crbpavel.progressBar</id>
+    <name>Custom Progress Bar</name>
+    <version>1.7</version>
+    <idea-version since-build="193"/>
+    <vendor email="pavelzavalnyuk11@gmail.com">crbpavel</vendor>
+
+    <description><![CDATA[
+      This is the Custom Progress Bar for IJ based IDEs based.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+
+    <applicationListeners>
+        <listener class="ru.crbpavel.progressbar.ProgressBarLafManagerListener"
+                  topic="com.intellij.ide.ui.LafManagerListener" />
+    </applicationListeners>
+</idea-plugin>
